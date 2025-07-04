@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Talk to Therapist</title>
+  <script>
+    const assistant = "9139da9d-c9d6-42ed-ade3-2f24d78a18ef";
+    const apiKey = "6795f565-c685-4b51-af99-e77da1d1e4ee";
+    (function (d, t) {
+      var g = document.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      g.src = "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+      g.defer = true;
+      g.async = true;
+      s.parentNode.insertBefore(g, s);
+      g.onload = function () {
+        window.vapiSDK.run({
+          apiKey: apiKey,
+          assistant: assistant
+        });
+      };
+    })(document, "script");
+  </script>
+</head>
+<body>
+  <h2 style="text-align:center; font-family:sans-serif;">Calling Therapist...</h2>
+</body>
+</html>
